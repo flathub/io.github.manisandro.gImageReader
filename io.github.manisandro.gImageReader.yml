@@ -9,7 +9,8 @@ rename-icon: gimagereader
 add-extensions:
   io.github.manisandro.gImageReader.tessdata:
     directory: share/tessdata
-    subdirectories: false
+    version: stable
+    versions: stable;beta;test
     no-autodownload: true
     autodelete: true
 
