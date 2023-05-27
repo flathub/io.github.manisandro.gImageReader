@@ -433,10 +433,5 @@ modules:
       - type: git
         url: https://github.com/manisandro/gimagereader
         commit: a4820ebb8f8f05086f11c310c3f55a6ff5903f3e
-        x-checker-data:
-          type: anitya
-          project-id: 8889
-          stable-only: true
-          tag-template: v$version
       - type: patch
         path: patches/fix-about-dialog-logo.patch
