@@ -432,8 +432,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/manisandro/gimagereader
-        tag: v3.4.1
-        commit: 8a046ec7bf64e996fbc81187306334fbd11873c9
+        commit: a4820ebb8f8f05086f11c310c3f55a6ff5903f3e
         x-checker-data:
           type: anitya
           project-id: 8889
