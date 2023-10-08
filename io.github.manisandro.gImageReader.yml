@@ -322,6 +322,7 @@ modules:
           - -DENABLE_SPLASH=OFF
           - -DENABLE_BOOST=OFF
           - -DENABLE_CPP=OFF
+          - -DINTERFACE_TYPE=gtk
         buildsystem: cmake-ninja
         builddir: true
         modules:
