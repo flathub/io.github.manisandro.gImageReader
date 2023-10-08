@@ -316,13 +316,14 @@ modules:
           - -DENABLE_LIBTIFF=ON
           - -DENABLE_LIBPNG=ON
           - -DENABLE_GLIB=ON
+          - -DENABLE_QT5=OFF
+          - -DENABLE_QT6=OFF
           - -DENABLE_CMS='lcms2'
           - -DENABLE_LIBOPENJPEG='openjpeg2'
           - -DENABLE_DCTDECODER='libjpeg'
           - -DENABLE_SPLASH=OFF
           - -DENABLE_BOOST=OFF
           - -DENABLE_CPP=OFF
-          - -DINTERFACE_TYPE=gtk
         buildsystem: cmake-ninja
         builddir: true
         modules:
