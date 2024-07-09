@@ -6,5 +6,6 @@
 build
 build-dir
 repo
+.flatpak
 
 # End of https://www.toptal.com/developers/gitignore/api/flatpak
