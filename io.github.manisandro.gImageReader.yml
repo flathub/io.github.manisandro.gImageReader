@@ -81,8 +81,8 @@ modules:
           - ./b2 -j $FLATPAK_BUILDER_N_JOBS install
         sources:
           - type: archive
-            url: https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.bz2
-            sha256: 7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617
+            url: https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.bz2
+            sha256: 1bed88e40401b2cb7a1f76d4bab499e352fa4d0c5f31c0dbae64e24d34d7513b
             x-checker-data:
               type: anitya
               project-id: 6845
@@ -319,8 +319,8 @@ modules:
                   url-template: https://github.com/uclouvain/openjpeg/archive/v$version.tar.gz
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
-            sha256: 19eb4f49198e4ae3fd9e5a6cf24d0fc7e674e8802046a7de14baab1e40cc2f1d
+            url: https://poppler.freedesktop.org/poppler-24.09.0.tar.xz
+            sha256: ebd857987e2395608c69fdc44009692d5906f13b612c5280beff65a0b75dc255
             x-checker-data:
               type: anitya
               project-id: 3686
@@ -350,8 +350,8 @@ modules:
           - /bin
         sources:
           - type: archive
-            url: https://libzip.org/download/libzip-1.10.1.tar.xz
-            sha256: dc3c8d5b4c8bbd09626864f6bcf93de701540f761d76b85d7c7d710f4bd90318
+            url: https://libzip.org/download/libzip-1.11.1.tar.xz
+            sha256: 721e0e4e851073b508c243fd75eda04e4c5006158a900441de10ce274cc3b633
             x-checker-data:
               type: anitya
               project-id: 10649
