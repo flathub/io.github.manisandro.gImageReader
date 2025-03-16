@@ -223,9 +223,9 @@ modules:
             buildsystem: meson
           - name: atkmm
             sources:
-              - sha256: 0a142a8128f83c001efb8014ee463e9a766054ef84686af953135e04d28fdab3
+              - sha256: 4140baa3c7991e8e0c518b17939c1a655e3e578bcdaf2fc0f2767e07853af545
                 type: archive
-                url: https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
+                url: https://download.gnome.org/sources/atkmm/2.29/atkmm-2.29.1.tar.xz
                 x-checker-data:
                   type: gnome
                   name: atkmm
@@ -269,8 +269,8 @@ modules:
               - --disable-documentation
             sources:
               - type: archive
-                url: https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
-                sha256: 691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd
+                url: https://download.gnome.org/sources/gtksourceview/3.99/gtksourceview-3.99.7.tar.xz
+                sha256: ad1d0d19db0298bd8d1cffdb56724025fb98ccf6b8719ef2ba196bdfbc3a7172
                 x-checker-data:
                   type: gnome
                   name: gtksourceview
@@ -279,8 +279,8 @@ modules:
                     <: '4.0'
         sources:
           - type: archive
-            url: https://download.gnome.org/sources/gtksourceviewmm/3.18/gtksourceviewmm-3.18.0.tar.xz
-            sha256: 51081ae3d37975dae33d3f6a40621d85cb68f4b36ae3835eec1513482aacfb39
+            url: https://download.gnome.org/sources/gtksourceviewmm/3.91/gtksourceviewmm-3.91.1.tar.xz
+            sha256: feaae794c0f97f583a25f297c6c2b80f5f20151fdc9a4012fddb911520131721
             x-checker-data:
               type: gnome
               name: gtksourceviewmm
@@ -310,8 +310,8 @@ modules:
               - /bin
             sources:
               - type: archive
-                url: https://github.com/uclouvain/openjpeg/archive/v2.5.2.tar.gz
-                sha256: 90e3896fed910c376aaf79cdd98bdfdaf98c6472efd8e1debf0a854938cbda6a
+                url: https://github.com/uclouvain/openjpeg/archive/v2.5.3.tar.gz
+                sha256: 368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707
                 x-checker-data:
                   type: anitya
                   project-id: 2550
@@ -332,8 +332,8 @@ modules:
           - --disable-documentation
         sources:
           - type: archive
-            url: https://download.gnome.org/sources/libxml++/3.2/libxml++-3.2.5.tar.xz
-            sha256: 0c9b381b5a83d6b3ab4b0b865d7256dab27d575981b63be2f859edcb94da59c7
+            url: https://download.gnome.org/sources/libxml++/3.9/libxml++-3.9.1.tar.xz
+            sha256: 124088c69e23681b2d43cdb7cf596157abdf6a437abde889a9da22f472094f5c
             x-checker-data:
               type: gnome
               name: libxml++
@@ -350,8 +350,8 @@ modules:
           - /bin
         sources:
           - type: archive
-            url: https://libzip.org/download/libzip-1.11.2.tar.xz
-            sha256: 5d471308cef4c4752bbcf973d9cd37ba4cb53739116c30349d4764ba1410dfc1
+            url: https://libzip.org/download/libzip-1.11.3.tar.xz
+            sha256: 9509d878ba788271c8b5abca9cfde1720f075335686237b7e9a9e7210fe67c1b
             x-checker-data:
               type: anitya
               project-id: 10649
@@ -375,8 +375,8 @@ modules:
 
         sources:
           - type: archive
-            url: https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.4.1.tar.gz
-            sha256: c4bc2a81c12a472f445b7c2fb4705a08bd643ef467f51ec84f0e148bd368051b
+            url: https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.0.tar.gz
+            sha256: f2fb34ca035b6d087a42875a35a7a5c4155fa9979c6132365b1e5a28ebc3fc11
             x-checker-data:
               type: anitya
               project-id: 4954
