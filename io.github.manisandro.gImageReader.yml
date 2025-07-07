@@ -277,7 +277,7 @@ modules:
                   versions:
                     <: '3.25'
               - type: patch
-                path: gtksourceview-gcc14.patch
+                path: patches/gtksourceview-gcc14.patch
         sources:
           - type: archive
             url: https://download.gnome.org/sources/gtksourceviewmm/3.21/gtksourceviewmm-3.21.3.tar.xz
@@ -413,7 +413,7 @@ modules:
           stable-only: true
           tag-template: v$version
       - type: patch
-        path: patches/fix-about-dialog-logo.patch
-      - type: patch
-        path: patches/fix_appdata.patch
-
+        paths:
+          - patches/fix-about-dialog-logo.patch
+          - patches/fix_appdata.patch
+          - patches/fix_enchant-provider.patch
