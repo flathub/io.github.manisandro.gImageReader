@@ -127,8 +127,6 @@ modules:
           - /share
         config-opts:
           - -DPODOFO_BUILD_LIB_ONLY=1
-          - -DPODOFO_BUILD_SHARED=1
-          - -DPODOFO_BUILD_STATIC=0
         sources:
           - type: archive
             url: https://github.com/podofo/podofo/archive/refs/tags/1.0.1.tar.gz
