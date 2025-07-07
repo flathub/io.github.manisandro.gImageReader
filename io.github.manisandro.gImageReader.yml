@@ -276,6 +276,8 @@ modules:
                   stable-only: true
                   versions:
                     <: '3.25'
+              - type: patch
+                path: gtksourceview-gcc14.patch
         sources:
           - type: archive
             url: https://download.gnome.org/sources/gtksourceviewmm/3.21/gtksourceviewmm-3.21.3.tar.xz
