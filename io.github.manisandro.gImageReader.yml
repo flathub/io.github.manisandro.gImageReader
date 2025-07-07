@@ -122,7 +122,6 @@ modules:
 
       - name: podofo
         buildsystem: cmake-ninja
-        builddir: true
         cleanup:
           - /bin
           - /share
@@ -130,12 +129,14 @@ modules:
           - -DPODOFO_BUILD_LIB_ONLY=1
         sources:
           - type: archive
-            url: https://github.com/podofo/podofo/archive/refs/tags/1.0.1.tar.gz
-            sha256: 188316124627a68feeb0636697f907f2cd13f48bdef7eca5fc8492f9c53ce012
+            url: https://github.com/podofo/podofo/archive/refs/tags/0.10.5.tar.gz
+            sha256: 49b159e88ba177ad2561b5cf6cbd68ecbe83272f5488bc527e44f97dbf695273
             x-checker-data:
               type: anitya
               project-id: 10527
               url-template: https://github.com/podofo/podofo/archive/refs/tags/$version.tar.gz
+              versions:
+                <: '1.0' # gimagereader 3.4.2 fails to build against v1.0.1
 
       - name: djvulibre
         sources:
