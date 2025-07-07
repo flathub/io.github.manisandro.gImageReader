@@ -335,14 +335,14 @@ modules:
           - --disable-documentation
         sources:
           - type: archive
-            url: https://download.gnome.org/sources/libxml++/3.9/libxml++-3.9.1.tar.xz
-            sha256: 124088c69e23681b2d43cdb7cf596157abdf6a437abde889a9da22f472094f5c
+            url: https://download.gnome.org/sources/libxml++/3.2/libxml++-3.2.5.tar.xz
+            sha256: 0c9b381b5a83d6b3ab4b0b865d7256dab27d575981b63be2f859edcb94da59c7
             x-checker-data:
               type: gnome
               name: libxml++
               stable-only: true
               versions:
-                <: '4.0'
+                <: '3.3'
 
       - name: libzip
         buildsystem: cmake-ninja
