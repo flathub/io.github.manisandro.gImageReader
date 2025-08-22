@@ -1,6 +1,5 @@
 app-id: io.github.manisandro.gImageReader
 runtime: org.gnome.Platform
-# runtime 45 causes application crashes: https://github.com/flathub/io.github.manisandro.gImageReader/issues/31
 runtime-version: '48'
 sdk: org.gnome.Sdk
 command: gimagereader-gtk
@@ -170,12 +169,11 @@ modules:
             sources:
               - sha256: 235a40bec7346c7b82b6a8caae0456353dc06e71f14bc414bcc858af1838719a
                 type: archive
-                url: >-
-                  https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.8.tar.xz
+                url: https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.8.tar.xz
                 x-checker-data:
                   type: gnome
                   name: libsigc++
-                  //: later versions are incompatible with gtkmm3.24
+                  # later versions are incompatible with gtkmm3.24
                   versions:
                     <: '2.11'
             buildsystem: meson
@@ -189,7 +187,7 @@ modules:
                 x-checker-data:
                   type: gnome
                   name: glibmm
-                  //: later versions have ABI break
+                  # later versions have ABI break
                   versions:
                     <: '2.67'
             buildsystem: meson
