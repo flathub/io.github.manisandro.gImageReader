@@ -81,8 +81,8 @@ modules:
           - ./b2 -j $FLATPAK_BUILDER_N_JOBS install
         sources:
           - type: archive
-            url: https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.bz2
-            sha256: 46d9d2c06637b219270877c9e16155cbd015b6dc84349af064c088e9b5b12f7b
+            url: https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.bz2
+            sha256: 85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a
             x-checker-data:
               type: anitya
               project-id: 6845
@@ -288,7 +288,7 @@ modules:
               name: gtksourceviewmm
               stable-only: true
               versions:
-                    <: '3.22'
+                <: '3.22'
 
       - name: poppler
         config-opts:
@@ -323,8 +323,8 @@ modules:
                   url-template: https://github.com/uclouvain/openjpeg/archive/v$version.tar.gz
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-25.07.0.tar.xz
-            sha256: c504a9066dbdfebe377ad53cec641fd971ee96c4e1e8ca74e6c9c03d46d817ae
+            url: https://poppler.freedesktop.org/poppler-25.08.0.tar.xz
+            sha256: 425ed4d4515a093bdcdbbaac6876f20617451edc710df6a4fd6c45dd67eb418d
             x-checker-data:
               type: anitya
               project-id: 3686
@@ -405,14 +405,14 @@ modules:
 
       - name: enchant
         sources:
-        - type: archive
-          url: https://github.com/AbiWord/enchant/releases/download/v2.8.10/enchant-2.8.10.tar.gz
-          sha256: 6db791265ace652c63a6d24f376f4c562b742284d70d3ccb9e1ce8be45b288c9
-          x-checker-data:
-            type: anitya
-            project-id: 6601
-            stable-only: true
-            url-template: https://github.com/AbiWord/enchant/releases/download/v$version/enchant-$version.tar.gz
+          - type: archive
+            url: https://github.com/AbiWord/enchant/releases/download/v2.8.12/enchant-2.8.12.tar.gz
+            sha256: 20e5fab2ca0f95ba9d1ef5052fe5b028e3e1d66d4cdea6b9adfcbd3e524c2a09
+            x-checker-data:
+              type: anitya
+              project-id: 6601
+              stable-only: true
+              url-template: https://github.com/AbiWord/enchant/releases/download/v$version/enchant-$version.tar.gz
         cleanup:
           - '*.a'
           - '*.la'
@@ -423,8 +423,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/manisandro/gimagereader
-        tag: v3.4.2
-        commit: 6249109d4637f4309c04d6d6205fa76e23efd33b
+        tag: v3.4.3
+        commit: 8b9c9fb7389d9ca9c5086bef15665db8268eb21e
         x-checker-data:
           type: anitya
           project-id: 8889
@@ -433,5 +433,3 @@ modules:
       - type: patch
         paths:
           - patches/fix-about-dialog-logo.patch
-          - patches/fix_appdata.patch
-          - patches/fix_enchant-provider.patch
