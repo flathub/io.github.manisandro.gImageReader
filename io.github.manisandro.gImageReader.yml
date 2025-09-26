@@ -1,6 +1,6 @@
 app-id: io.github.manisandro.gImageReader
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '49'
 sdk: org.gnome.Sdk
 command: gimagereader-gtk
 rename-desktop-file: gimagereader-gtk.desktop
@@ -46,7 +46,6 @@ cleanup:
   - /lib/glibmm-2.4
   - /lib/gtkmm-3.0
   - /lib/libglibmm_generate_extra_defs*
-  - /lib/openjpeg-*
   - /lib/pangomm-1.4
   - /lib/pkgconfig
   - /lib/sigc++-2.0
@@ -129,8 +128,8 @@ modules:
           - -DPODOFO_BUILD_LIB_ONLY=1
         sources:
           - type: archive
-            url: https://github.com/podofo/podofo/archive/refs/tags/1.0.1.tar.gz
-            sha256: 188316124627a68feeb0636697f907f2cd13f48bdef7eca5fc8492f9c53ce012
+            url: https://github.com/podofo/podofo/archive/refs/tags/1.0.2.tar.gz
+            sha256: 4f46edac16e0b3badba2e972b3e3b7d8381845fad3eb39a02562cb7a04207d45
             x-checker-data:
               type: anitya
               project-id: 10527
@@ -296,32 +295,17 @@ modules:
           - -DENABLE_QT5=OFF
           - -DENABLE_QT6=OFF
           - -DENABLE_CMS='lcms2'
-          - -DENABLE_LIBOPENJPEG='openjpeg2'
+          - -DENABLE_LIBOPENJPEG=ON
           - -DENABLE_DCTDECODER='libjpeg'
           - -DENABLE_SPLASH=OFF
           - -DENABLE_BOOST=OFF
           - -DENABLE_CPP=OFF
         buildsystem: cmake-ninja
         builddir: true
-        modules:
-          - name: openjpeg2
-            buildsystem: cmake-ninja
-            builddir: true
-            cleanup:
-              - /bin
-            sources:
-              - type: archive
-                url: https://github.com/uclouvain/openjpeg/archive/v2.5.3.tar.gz
-                sha256: 368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707
-                x-checker-data:
-                  type: anitya
-                  project-id: 2550
-                  stable-only: true
-                  url-template: https://github.com/uclouvain/openjpeg/archive/v$version.tar.gz
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-25.08.0.tar.xz
-            sha256: 425ed4d4515a093bdcdbbaac6876f20617451edc710df6a4fd6c45dd67eb418d
+            url: https://poppler.freedesktop.org/poppler-25.09.1.tar.xz
+            sha256: 0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658
             x-checker-data:
               type: anitya
               project-id: 3686
@@ -364,15 +348,14 @@ modules:
           - --disable-graphics
         modules:
           - name: libleptonica
-            buildsystem: autotools
             sources:
               - type: archive
-                url: https://github.com/DanBloomberg/leptonica/releases/download/1.85.0/leptonica-1.85.0.tar.gz
-                sha256: 3745ae3bf271a6801a2292eead83ac926e3a9bc1bf622e9cd4dd0f3786e17205
+                url: https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.86.0.tar.gz
+                sha256: b4447faf61a8786a9b211d58d4103d85d47fd3a5dd418d5a6bc525d41db54ccc
                 x-checker-data:
                   type: anitya
                   project-id: 1549
-                  url-template: https://github.com/DanBloomberg/leptonica/releases/download/$version/leptonica-$version.tar.gz
+                  url-template: https://github.com/DanBloomberg/leptonica/archive/refs/tags/$version.tar.gz
 
         sources:
           - type: archive
@@ -403,13 +386,13 @@ modules:
       - name: enchant
         sources:
           - type: archive
-            url: https://github.com/AbiWord/enchant/releases/download/v2.8.12/enchant-2.8.12.tar.gz
+            url: https://github.com/rrthomas/enchant/releases/download/v2.8.12/enchant-2.8.12.tar.gz
             sha256: 20e5fab2ca0f95ba9d1ef5052fe5b028e3e1d66d4cdea6b9adfcbd3e524c2a09
             x-checker-data:
               type: anitya
               project-id: 6601
               stable-only: true
-              url-template: https://github.com/AbiWord/enchant/releases/download/v$version/enchant-$version.tar.gz
+              url-template: https://github.com/rrthomas/enchant/releases/download/v$version/enchant-$version.tar.gz
         cleanup:
           - '*.a'
           - '*.la'
