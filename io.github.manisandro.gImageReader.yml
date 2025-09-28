@@ -295,7 +295,6 @@ modules:
           - -DENABLE_QT5=OFF
           - -DENABLE_QT6=OFF
           - -DENABLE_CMS='lcms2'
-          - -DENABLE_LIBOPENJPEG=ON
           - -DENABLE_DCTDECODER='libjpeg'
           - -DENABLE_SPLASH=OFF
           - -DENABLE_BOOST=OFF
