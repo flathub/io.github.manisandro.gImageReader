@@ -79,8 +79,8 @@ modules:
           - ./b2 -j $FLATPAK_BUILDER_N_JOBS install
         sources:
           - type: archive
-            url: https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.bz2
-            sha256: 85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a
+            url: https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2
+            sha256: 49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305
             x-checker-data:
               type: anitya
               project-id: 6845
@@ -128,8 +128,8 @@ modules:
           - -DPODOFO_BUILD_LIB_ONLY=1
         sources:
           - type: archive
-            url: https://github.com/podofo/podofo/archive/refs/tags/1.0.2.tar.gz
-            sha256: 4f46edac16e0b3badba2e972b3e3b7d8381845fad3eb39a02562cb7a04207d45
+            url: https://github.com/podofo/podofo/archive/refs/tags/1.0.3.tar.gz
+            sha256: 02815b21a51632c2849d41b067597e9356bbc54bad0efcd84c902b555c203ce7
             x-checker-data:
               type: anitya
               project-id: 10527
@@ -303,8 +303,8 @@ modules:
         builddir: true
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-25.10.0.tar.xz
-            sha256: 6b5e9bb64dabb15787a14db1675291c7afaf9387438cc93a4fb7f6aec4ee6fe0
+            url: https://poppler.freedesktop.org/poppler-25.12.0.tar.xz
+            sha256: c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48
             x-checker-data:
               type: anitya
               project-id: 3686
@@ -349,8 +349,8 @@ modules:
           - name: libleptonica
             sources:
               - type: archive
-                url: https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.86.0.tar.gz
-                sha256: b4447faf61a8786a9b211d58d4103d85d47fd3a5dd418d5a6bc525d41db54ccc
+                url: https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.87.0.tar.gz
+                sha256: fa2b40c5caea96d1bb93a97486262aed8731b69ce25a84a6bf5d25323e33f631
                 x-checker-data:
                   type: anitya
                   project-id: 1549
@@ -385,8 +385,8 @@ modules:
       - name: enchant
         sources:
           - type: archive
-            url: https://github.com/rrthomas/enchant/releases/download/v2.8.12/enchant-2.8.12.tar.gz
-            sha256: 20e5fab2ca0f95ba9d1ef5052fe5b028e3e1d66d4cdea6b9adfcbd3e524c2a09
+            url: https://github.com/rrthomas/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz
+            sha256: d04588769399ff7140fa214b9731e6fc6eda9bb2e75df9f67263717710bb4c4b
             x-checker-data:
               type: anitya
               project-id: 6601
