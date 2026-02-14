@@ -303,8 +303,8 @@ modules:
         builddir: true
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-25.12.0.tar.xz
-            sha256: c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48
+            url: https://poppler.freedesktop.org/poppler-26.02.0.tar.xz
+            sha256: dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77
             x-checker-data:
               type: anitya
               project-id: 3686
@@ -385,8 +385,8 @@ modules:
       - name: enchant
         sources:
           - type: archive
-            url: https://github.com/rrthomas/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz
-            sha256: d04588769399ff7140fa214b9731e6fc6eda9bb2e75df9f67263717710bb4c4b
+            url: https://github.com/rrthomas/enchant/releases/download/v2.8.15/enchant-2.8.15.tar.gz
+            sha256: d3fd9e4170bfb5110b0bda577fe764a38fb606b3c25d2f0c3840234521ff1252
             x-checker-data:
               type: anitya
               project-id: 6601
