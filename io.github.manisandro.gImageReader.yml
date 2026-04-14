@@ -87,16 +87,6 @@ modules:
               stable-only: true
               url-template: https://archives.boost.io/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2
 
-      - name: mm-common
-        sources:
-          - type: archive
-            url: https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.7.tar.xz
-            sha256: 494abfce781418259b1e9d8888c73af4de4b6f3be36cc75d9baa8baa0f2a7a39
-            x-checker-data:
-              type: gnome
-              name: mm-common
-              stable-only: true
-
       - name: sane-backends
         buildsystem: autotools
         config-opts:
@@ -303,8 +293,8 @@ modules:
         builddir: true
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-26.02.0.tar.xz
-            sha256: dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77
+            url: https://poppler.freedesktop.org/poppler-26.04.0.tar.xz
+            sha256: b0955163114af96bc0106f68cb24daf973a629462453d8b82775f81b0d4e0693
             x-checker-data:
               type: anitya
               project-id: 3686
@@ -312,8 +302,9 @@ modules:
               url-template: https://poppler.freedesktop.org/poppler-$version.tar.xz
 
       - name: libxml++
+        buildsystem: meson
         config-opts:
-          - --disable-documentation
+          - -Dbuild-examples=false
         sources:
           - type: archive
             url: https://download.gnome.org/sources/libxml++/3.2/libxml++-3.2.5.tar.xz
