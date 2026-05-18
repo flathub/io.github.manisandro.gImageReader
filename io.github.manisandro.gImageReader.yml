@@ -118,8 +118,8 @@ modules:
           - -DPODOFO_BUILD_LIB_ONLY=1
         sources:
           - type: archive
-            url: https://github.com/podofo/podofo/archive/refs/tags/1.0.3.tar.gz
-            sha256: 02815b21a51632c2849d41b067597e9356bbc54bad0efcd84c902b555c203ce7
+            url: https://github.com/podofo/podofo/archive/refs/tags/1.1.0.tar.gz
+            sha256: f34b4413b613e33ab9fe83ff5aa7e2827a6425fcbcd343339458d614b7d6a951
             x-checker-data:
               type: anitya
               project-id: 10527
@@ -128,8 +128,8 @@ modules:
       - name: djvulibre
         sources:
           - type: archive
-            url: https://downloads.sourceforge.net/djvu/djvulibre-3.5.29.tar.gz
-            sha256: d3b4b03ae2bdca8516a36ef6eb27b777f0528c9eda26745d9962824a3fdfeccf
+            url: https://downloads.sourceforge.net/djvu/djvulibre-3.5.30.tar.gz
+            sha256: ee5e457d4cfebe566f94b99e5e3d3cc7f5c79ddb741c2ac2ba2e456f00329644
             x-checker-data:
               type: anitya
               project-id: 10159
@@ -293,8 +293,8 @@ modules:
         builddir: true
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-26.04.0.tar.xz
-            sha256: b0955163114af96bc0106f68cb24daf973a629462453d8b82775f81b0d4e0693
+            url: https://poppler.freedesktop.org/poppler-26.05.0.tar.xz
+            sha256: 6fef27ff04f37db43054c86bcdff6128c9fb1f6af4ef3c8b369a7e9abd68d0bb
             x-checker-data:
               type: anitya
               project-id: 3686
@@ -376,8 +376,8 @@ modules:
       - name: enchant
         sources:
           - type: archive
-            url: https://github.com/rrthomas/enchant/releases/download/v2.8.15/enchant-2.8.15.tar.gz
-            sha256: d3fd9e4170bfb5110b0bda577fe764a38fb606b3c25d2f0c3840234521ff1252
+            url: https://github.com/rrthomas/enchant/releases/download/v2.8.16/enchant-2.8.16.tar.gz
+            sha256: d73162b5eff401a6397e1215e2b103bcef83f921c396c7f6b1394d2450d124e2
             x-checker-data:
               type: anitya
               project-id: 6601
