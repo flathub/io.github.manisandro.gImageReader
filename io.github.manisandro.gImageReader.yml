@@ -92,6 +92,8 @@ modules:
         buildsystem: autotools
         config-opts:
           - --disable-saned
+          - --disable-avahi
+          - --disable-mdns
         post-install:
           - rm /app/etc/sane.d/dll.conf
           - rm /app/etc/sane.d/net.conf
