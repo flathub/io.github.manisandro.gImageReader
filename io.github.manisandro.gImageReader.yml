@@ -20,6 +20,8 @@ finish-args:
   - --talk-name=org.a11y.Bus
   - --own-name=org.gnome.gimagereader.*
   - --talk-name=org.gtk.vfs.*
+  # for Sane backends to detect network scanners via Avahi
+  - --system-talk-name=org.freedesktop.Avahi
   - --filesystem=xdg-run/gvfsd
   - --env=TESSDATA_PREFIX=/app/share
   # Filesystem access
