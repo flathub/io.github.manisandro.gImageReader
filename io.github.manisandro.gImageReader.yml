@@ -1,6 +1,6 @@
 app-id: io.github.manisandro.gImageReader
 runtime: org.gnome.Platform
-runtime-version: '49'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 command: gimagereader-gtk
 rename-desktop-file: gimagereader-gtk.desktop
@@ -121,8 +121,8 @@ modules:
           - -DPODOFO_BUILD_LIB_ONLY=1
         sources:
           - type: archive
-            url: https://github.com/podofo/podofo/archive/refs/tags/1.1.0.tar.gz
-            sha256: f34b4413b613e33ab9fe83ff5aa7e2827a6425fcbcd343339458d614b7d6a951
+            url: https://github.com/podofo/podofo/archive/refs/tags/1.1.1.tar.gz
+            sha256: 16943528b37798d8663ffedc97190803e525d0a1dcb021fdbf9d35242831890a
             x-checker-data:
               type: anitya
               project-id: 10527
@@ -143,9 +143,9 @@ modules:
         # NB: all versions are pinned below a coordinated ABI break
       - name: gtkmm
         sources:
-          - sha256: 7ab7e2266808716e26c39924ace1fb46da86c17ef39d989624c42314b32b5a76
+          - sha256: 19e383c82d5dd89db275e00b82864e90414d4c3fb3d100b2f996bcc2338a4cc7
             type: archive
-            url: https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+            url: https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.11.tar.xz
             x-checker-data:
               type: gnome
               name: gtkmm
@@ -187,9 +187,9 @@ modules:
               - -Dbuild-examples=false
           - name: cairomm
             sources:
-              - sha256: 70136203540c884e89ce1c9edfb6369b9953937f6cd596d97c78c9758a5d48db
+              - sha256: 7e0d5c7f29175d573a03ab5c45aef63f48dd91a5caf335a404cd763e4b7cea4a
                 type: archive
-                url: https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz
+                url: https://www.cairographics.org/releases/cairomm-1.14.6.tar.xz
                 x-checker-data:
                   type: anitya
                   project-id: 7959
@@ -212,9 +212,9 @@ modules:
             buildsystem: meson
           - name: atkmm
             sources:
-              - sha256: 0a142a8128f83c001efb8014ee463e9a766054ef84686af953135e04d28fdab3
+              - sha256: ae449192a582a2582a95e0602b15d792bbd639e836339b81ef916aa87540ac5c
                 type: archive
-                url: https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
+                url: https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.5.tar.xz
                 x-checker-data:
                   type: gnome
                   name: atkmm
@@ -296,8 +296,8 @@ modules:
         builddir: true
         sources:
           - type: archive
-            url: https://poppler.freedesktop.org/poppler-26.05.0.tar.xz
-            sha256: 6fef27ff04f37db43054c86bcdff6128c9fb1f6af4ef3c8b369a7e9abd68d0bb
+            url: https://poppler.freedesktop.org/poppler-26.06.0.tar.xz
+            sha256: 4cb4e5a3dc8cb5eec751c8a23c8ba19f61f96dedc0cd07d2aee6b0c8e2cf6ba4
             x-checker-data:
               type: anitya
               project-id: 3686
